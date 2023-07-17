@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | Product Profs</title>
+  <script src="https://kit.fontawesome.com/96674dd901.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="shortcut icon" href="./src/assets/icons/product-profs.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="h-8 bg-primary flex items-center px-8 space-x-2">
+    <div class="rounded-full h-4 w-4 bg-white"></div>
+    <div class="rounded-full h-4 w-4 bg-white"></div>
+    <div class="rounded-full h-4 w-4 bg-white"></div>
+  </div>
+
+  <div class="container mx-auto font-body">
+    <header>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="./index.html" class="flex items-center">
+            <img src="./src/assets/icons/product-profs-logo.svg" class="h-12 w-auto mr-3" alt="ProductProfs Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-8 h-8" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill="#7F0A7D" fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="./index.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent md:hover:text-primary md:text-gray-900 md:p-0 md:dark:text-blue-500 md:dark:bg-transparent"
+                  aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-white bg-primary md:text-primary md:underline underline-offset-3 decoration-4 decoration-primary rounded hover:bg-gray-100 md:bg-transparent md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                  Courses
+                  <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-96 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="./courses.html"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Management for Beginners</a>
+                    </li>
+                    <hr class="h-px my-1 bg-gray-300 border-0 dark:bg-gray-700" />
+                    <li>
+                      <a href="javascript:void(0)"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Management for Upskillers (Launching soon)</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Design (Launching soon)</a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)"
+                        class="block px-4 py-2 hover:bg-primary hover:text-white dark:hover:bg-gray-600 dark:hover:text-white">Product
+                        Marketing (Launching soon)</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="./enterprise.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Enterprise</a>
+              </li>
+              <li>
+                <a href="./resources.html"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+        <!-- course section start -->
+        <section class="mt-12 flex flex-col w-full overflow-hidden bg-white lg:flex-row lg:items-stretch sm:mx-auto">
+          <div class="flex justify-end p-8 bg-white lg:px-16 lg:pl-10 lg:w-1/2">
+            <div class="flex flex-col items-start justify-center w-full lg:max-w-lg">
+              <p
+                class="inline-block px-2 py-1 mb-5 font-medium tracking-wider text-gray-900 uppercase bg-gray-200 rounded-full text-xxs">
+                Level: Beginner
+              </p>
+              <h5 class="mb-3 text-2xl font-extrabold leading-none sm:text-4xl lg:text-4xl">
+                Product Management For Beginners
+              </h5>
+              <p class="py-5 mb-5 text-gray-600 lg:text-xl">
+                <span class="font-bold">This course</span> will help you learn
+                everything you should be doing in the first 90 days and land
+                your first job.
+              </p>
+              <div class="flex flex-col gap-8 sm:flex-row sm:justify-center lg:justify-start">
+                <a href="javascript:void(0)" class="relative text-2xl group">
+                  <span data-modal-target="staticModal" data-modal-toggle="staticModal"
+                    class="relative z-10 px-5 py-2 font-bold leading-tight text-black bg-white border-4 border-primary rounded-lg group-hover:bg-primary group-hover:text-white">Enroll
+                    Now</span>
+                  <span class="absolute top-0 right-0 w-full h-14 -mt-2.5 -mr-0.5 bg-gray-900 rounded-lg"></span>
+                </a>
+                <a href="https://drive.google.com/file/d/127Q4AS5fsGiSEjZubuIMhbsbGbjDdApX/view?usp=sharing"
+                  target="_blank"
+                  class="font-bold mt-2 inline-block rounded-lg bg-primary px-6 py-4 text-center text-sm text-white outline-none ring-indigo-300 transition duration-100 hover:text-black hover:bg-tint focus-visible:ring active:bg-indigo-700 md:text-lg md:-mt-2.5">View
+                  Brochure</a>
+              </div>
+
+              <!-- modal start -->
+              <!-- Main modal -->
+              <div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                <div class="relative w-full max-w-2xl max-h-full">
+                  <!-- Modal content -->
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                      <h3 class="text-xl font-medium text-dark dark:text-white">
+                        Make Payment of ₦50,000 to:
+                      </h3>
+                      <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="staticModal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-6 space-y-6">
+                      <dl class="text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+                        <div class="flex items-center flex-col pb-3">
+                          <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank Name</dt>
+                          <dd class="text-lg font-semibold">UBA</dd>
+                        </div>
+
+                        <div class="flex flex-col items-center pt-3">
+                          <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Account Number</dt>
+                          <dd class="text-lg font-semibold">1026256738</dd>
+                        </div>
+
+                        <div class="flex flex-col items-center py-3">
+                          <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Account Name</dt>
+                          <dd class="text-lg font-semibold">Product Profs Ltd</dd>
+                        </div>
+                        <!-- <div class="text-center py-4">
+                          <dd class="text-lg font-semibold">OR</dd>
+                        </div> -->
+
+
+
+                        <div class="flex items-center flex-col pb-3">
+                          <dt class="mt-4 mb-1 text-gray-500 md:text-lg dark:text-gray-400">Bank Name</dt>
+                          <dd class="text-lg font-semibold">Moniepoint</dd>
+                        </div>
+
+                        <div class="flex flex-col items-center pt-3">
+                          <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Account Number</dt>
+                          <dd class="text-lg font-semibold">8295176593</dd>
+                        </div>
+
+                        <div class="flex flex-col items-center py-3">
+                          <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Account Name</dt>
+                          <dd class="text-lg font-semibold">Product Profs Ltd</dd>
+                        </div>
+                        <div>
+
+                        </div>
+                      </dl>
+
+
+                      <p class="font-bold mb-8 text-red-600 text-center">After making the transfer, use the
+                        button below to send proof of payment, full name and
+                        whatsapp number.</p>
+
+                    </div>
+                    <!-- Modal footer -->
+                    <div
+                      class="flex justify-center items-center p-6 border-t border-gray-200 rounded-b dark:border-gray-600">
+
+                      <a href="mailto:admin@productprofs.com" data-modal-hide="small-modal"
+                        class="w-full text-white bg-primary hover:opacity-70 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Send Proof
+                      </a>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modal end -->
+
+            </div>
+          </div>
+          <div class="order-first relative lg:order-last lg:w-1/2">
+            <img src="./src/assets/images/pm-beginners.jpg" alt="Hero Image"
+              class="rounded-lg object-cover w-full lg:absolute h-80" />
+          </div>
+        </section>
+        <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
+          <!-- stat - start -->
+          <div class="flex flex-col items-center justify-center rounded-lg bg-gray-100 p-4 md:p-8">
+            <div class="text-xl font-semibold text-primary">Cost:</div>
+            <div class="text-2xl text-center font-bold">₦50,000 / $109</div>
+          </div>
+          <!-- stat - end -->
+
+          <!-- stat - start -->
+          <div class="flex flex-col items-center justify-center rounded-lg bg-gray-100 p-4 lg:p-8">
+            <div class="text-xl font-semibold text-primary">Next Cohort:</div>
+            <div class="text-center text-2xl font-bold">1st of July</div>
+          </div>
+          <!-- stat - end -->
+
+          <!-- stat - start -->
+          <div class="flex flex-col items-center justify-center rounded-lg bg-gray-100 p-4 md:p-8">
+            <div class="text-xl font-semibold text-primary">6 weekends</div>
+            <div class="text-2xl text-center font-bold">
+              Saturdays & Sundays
+            </div>
+          </div>
+
+          <!-- stat - start -->
+          <div class="flex flex-col items-center justify-center rounded-lg bg-gray-100 p-4 md:p-8">
+            <div class="text-xl font-semibold text-primary">Virtual</div>
+            <div class="text-2xl font-bold">Live Classes</div>
+          </div>
+          <!-- stat - end -->
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <!-- text - start -->
+        <div class="mb-10 md:mb-16">
+          <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
+            What You Will Learn
+          </h2>
+        </div>
+        <!-- text - end -->
+
+        <div class="grid gap-4 sm:grid-cols-2 md:gap-8 xl:grid-cols-3">
+          <!-- feature - start -->
+          <div class="flex flex-col rounded-lg border p-4 md:p-6">
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              INTRODUCTION TO PRODUCT MANAGEMENT AND HOW GREAT PRODUCTS ARE
+              BUILT
+            </h3>
+            <p class="mb-4 text-gray-500">
+              Learn what is expected of you as a PM, learn how digital
+              products are built and how to excel in this enriching career.
+            </p>
+          </div>
+          <!-- feature - end -->
+
+          <!-- feature - start -->
+          <div class="flex flex-col rounded-lg border p-4 md:p-6">
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              DESIGN THINKING
+            </h3>
+            <p class="mb-4 text-gray-500">
+              Product Discovery, Problem Statement, User Research, User
+              Persona and User Flow.
+            </p>
+          </div>
+          <!-- feature - end -->
+
+          <!-- feature - start -->
+          <div class="flex flex-col rounded-lg border p-4 md:p-6">
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              BUILD A PRODUCT FROM CONCEPT TO REALITY
+            </h3>
+            <p class="mb-4 text-gray-500">
+              Build a product by applying the design thinking process,
+              wireframes, PRD and scrum ceremonies.
+            </p>
+          </div>
+          <!-- feature - end -->
+
+          <!-- feature - start -->
+          <div class="flex flex-col rounded-lg border p-4 md:p-6">
+            <h3 class="mb-2 text-lg font-semibold md:text-xl">
+              PREPARE FOR YOUR FIRST JOB
+            </h3>
+            <p class="mb-4 text-gray-500">
+              Deliver a great Product Presentation, and Interview demo
+              session.
+            </p>
+          </div>
+          <!-- feature - end -->
+        </div>
+      </div>
+    </div>
+
+    <div class="py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+        <!-- text - start -->
+        <div class="mb-24 md:mb-32">
+          <h2 class="mb-8 text-center text-2xl font-heading font-bold text-gray-800 md:mb-6 lg:text-3xl">
+            Your Trainers
+          </h2>
+        </div>
+        <!-- text - end -->
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
+          <div class="relative p-4 mb-16">
+            <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
+              <a href="javascript:void(0)" class="relative block">
+                <img alt="tutor-profile" src="./src/assets/images/hero-img.png"
+                  class="mx-auto object-cover object-top rounded-lg h-40 w-40 border-2 border-white dark:border-gray-800" />
+              </a>
+            </div>
+            <div class="px-6 py-4 pt-24 bg-white rounded-lg shadow dark:bg-gray-800">
+              <div class="text-center">
+                <p class="text-2xl text-gray-800 dark:text-white">
+                  Joseph Sadiq Lawal
+                </p>
+                <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                  Founder & CEO, Product Profs
+                </p>
+                <!-- <p
+                    class="py-4 mx-auto font-light text-gray-500 text-md w-60 dark:text-gray-400"
+                  >
+                    Charlie, born December 18, 1993 in Challans, is an imitator.
+                  </p> -->
+              </div>
+              <div class="flex items-center justify-between w-40 mx-auto text-gray-500 border-t border-gray-200">
+                <!-- social - start -->
+                <div class="flex items-center justify-center gap-4">
+                  <span class="text-sm font-semibold uppercase tracking-widest text-gray-600 sm:text-base">Check
+                    profile</span>
+                  <span class="h-px w-20 bg-gray-300"></span>
+
+                  <div class="flex gap-4">
+                    <a href="https://www.linkedin.com/in/joseph-sadiq-lawal-92b925111" target="_blank"
+                      class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <img class="w-24 h-24" src="./src/assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
+            </div>
+          </div>
+
+          <div class="relative p-4 mb-4">
+            <div class="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
+              <a href="javascript:void(0)" class="relative block">
+                <img alt="tutor-profile" src="./src/assets/images/edves.jpg"
+                  class="mx-auto object-cover rounded-lg h-40 w-40 border-2 border-white dark:border-gray-800" />
+              </a>
+            </div>
+            <div class="px-6 py-4 pt-24 bg-white rounded-lg shadow dark:bg-gray-800">
+              <div class="text-center">
+                <p class="text-2xl text-gray-800 dark:text-white">
+                  Kolade Orilowo
+                </p>
+                <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                  Head of Product and Customer Experience, Edves
+                </p>
+                <!-- <p
+                    class="py-4 mx-auto font-light text-gray-500 text-md w-60 dark:text-gray-400"
+                  >
+                    Charlie, born December 18, 1993 in Challans, is an imitator.
+                  </p> -->
+              </div>
+              <div class="flex items-center justify-between w-40 mx-auto text-gray-500 border-t border-gray-200">
+                <!-- social - start -->
+                <div class="flex items-center justify-center gap-4">
+                  <span class="text-sm font-semibold uppercase tracking-widest text-gray-600 sm:text-base">Check
+                    profile</span>
+                  <span class="h-px w-20 bg-gray-300"></span>
+
+                  <div class="flex gap-4">
+                    <a href="https://www.linkedin.com/in/koladeorilowo" target="_blank"
+                      class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                      <img class="w-24 h-24" src="./src/assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
+                    </a>
+                  </div>
+                </div>
+                <!-- social - end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+
+    <div class="mt-8 mx-auto w-11/12 p-4 text-center bg-white sm:p-16 border border-gray-200 rounded-lg shadow">
+      <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
+        Join our community of over 105+ learners
+      </h5>
+      <p class="mb-8 text-base text-gray-500 sm:text-lg dark:text-gray-400">
+        Stay up-to-date on jobs, and events, get free access to all our
+        Product career resources.
+      </p>
+      <div class="mb-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIf3mZg-X6L2l77v-3sDEgi5rl6ossRR4K6g5wyKGlht_YYA/viewform?usp=sharing"
+          target="_blank"
+          class="font-medium w-full sm:w-auto text-white bg-primary hover:opacity-80 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full text-base px-16 py-4 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
+          Subscribe
+        </a>
+      </div>
+    </div>
+
+    <a href="https://wa.me/+2347011978260" target="_blank"
+      class="float inline-flex items-center px-3 py-1.5 text-sm font-medium text-center text-black bg-white rounded-lg hover:bg-primary hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      Chat with Us
+
+      <img class="w-auto h-4 my-float ml-2" src="./src/assets/icons/whatsapp-icon.svg" alt="whatsapp-icon" />
+    </a>
+
+    <hr class="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
+    <!-- footer -->
+    <section class="py-8 mt-8 box-border leading-7 text-gray-900 bg-white">
+      <div class="box-border px-4 mx-auto md:px-6 lg:px-8 max-w-7xl">
+        <div
+          class="relative flex flex-col items-start justify-between leading-7 text-gray-900 border-0 border-gray-200 md:flex-row md:items-center">
+          <div
+            class="left-0 flex items-center justify-center order-first w-full mb-4 font-medium text-gray-900 md:justify-start md:absolute md:w-64 lg:order-none lg:w-auto title-font lg:items-center lg:justify-center md:mb-0">
+            <img class="w-auto h-10" src="./src/assets/icons/product-profs-logo.svg" alt="product-profs-logo" />
+          </div>
+
+          <div
+            class="box-border right-0 flex justify-center w-full mt-4 pb-4 space-x-3 border-solid md:w-auto md:justify-end md:absolute md:mt-0">
+            <a href="https://www.linkedin.com/company/product-profs/" target="_blank"
+              class="inline-flex items-center leading-7 text-gray-900 no-underline border-0 border-gray-200 cursor-pointer hover:text-blue-700 focus-within:text-blue-700">
+              <img class="w-auto h-10" src="./src/assets/icons/linkedin-icon.svg" alt="linkedin-icon" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100092807263045&mibextid=LQQJ4d" target="_blank"
+              class="inline-flex items-center leading-7 text-gray-900 no-underline border-0 border-gray-200 cursor-pointer hover:text-blue-700 focus-within:text-blue-700">
+              <img class="w-auto h-10" src="./src/assets/icons/facebook-icon.svg" alt="facebook-icon" />
+            </a>
+            <a href="https://twitter.com/ProductProfs" target="_blank"
+              class="inline-flex items-center leading-7 text-gray-900 no-underline border-0 border-gray-200 cursor-pointer hover:text-blue-700 focus-within:text-blue-700">
+              <img class="w-auto h-10" src="./src/assets/icons/twitter-icon.svg" alt="twitter-icon" />
+            </a>
+            <a href="https://instagram.com/productprofs?igshid=NTc4MTIwNjQ2YQ==" target="_blank"
+              class="inline-flex items-center leading-7 text-gray-900 no-underline border-0 border-gray-200 cursor-pointer hover:text-blue-700 focus-within:text-blue-700">
+              <img class="w-auto h-10" src="./src/assets/icons/instagram-icon.svg" alt="instagram-icon" />
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-2 pt-4 mt-4 leading-7 text-center text-gray-600 md:mt-6 md:pt-4">
+          <img src="./src/assets/icons/product-profs.svg" alt="ProductProfs icon" />
+          <p class="box-border mt-0 text-sm border-0 border-solid">
+            © 2023 ProductProfs. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./src/navbar.js"></script>
+  <script src="./src/flowbite.min.js"></script>
+</body>
+
+</html>
