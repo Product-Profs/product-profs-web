@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Makes the animation pause on hover
+.moving-text:hover {
+  animation-play-state: paused;
+}
+
+/* The animation */
+/* @keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.moving-text {
+  animation: marquee 15s linear infinite;
+} */
+
 .float {
   position: fixed;
   bottom: 40px;
@@ -32,4 +51,3 @@
 .resources-span {
   top: 20px;
 }
-
