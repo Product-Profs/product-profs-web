@@ -1536,10 +1536,6 @@ input:checked + .toggle-bg {
   height: 1px;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
 .max-h-full {
   max-height: 100%;
 }
