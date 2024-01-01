@@ -1640,6 +1640,10 @@ input:checked + .toggle-bg {
   flex-shrink: 1;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -2763,6 +2767,11 @@ input:checked + .toggle-bg {
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(190 37 177 / var(--tw-border-opacity));
+}
+
+.border-tint {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 168 224 / var(--tw-border-opacity));
 }
 
 .border-white {
