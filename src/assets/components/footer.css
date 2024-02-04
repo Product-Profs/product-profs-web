@@ -8,11 +8,6 @@ footer a {
   text-decoration: none;
 }
 
-/* #mc_embed_shell {
-  display: grid;
-  place-content: center;
-} */
-
 /* hero section styles */
 .hero {
   margin-top: 2rem;
@@ -111,20 +106,31 @@ footer a {
 }
 
 .flex-container p {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #202124;
   font-family: "Inter", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: 2.625rem; /* 131.25% */
   letter-spacing: -0.0375rem;
 }
 
+.hide {
+  display: none;
+}
+
+#mc_embed_shell {
+  background: #ffffff;
+  width: 100%;
+}
+
 #mc_embed_signup {
+  clear: left;
   font: 0.875rem Helvetica, Arial, sans-serif;
-  /* max-width: 600px;
-  width: 100%; */
 }
 
 .social {
@@ -251,6 +257,7 @@ footer a {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero {
+    margin-top: 4rem;
     flex-direction: row;
   }
 
@@ -282,6 +289,7 @@ footer a {
 
 @media screen and (min-width: 1024px) {
   .hero {
+    margin-top: 4rem;
     padding-inline: 6.25rem;
     flex-direction: row;
   }
@@ -304,6 +312,16 @@ footer a {
   .flex-container {
     border-radius: 1.25rem;
     margin-inline: auto;
+  }
+
+  .flex-container p {
+    font-size: 1.15rem;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .hide {
+    display: block;
   }
 
   .footer {
