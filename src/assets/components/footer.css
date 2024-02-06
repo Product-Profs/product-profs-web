@@ -122,6 +122,9 @@ footer a {
 .hide {
   display: none;
 }
+.clear {
+  text-align: center;
+}
 
 #mc_embed_shell {
   background: #ffffff;
