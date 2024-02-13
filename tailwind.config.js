@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./node_modules/flowbite/**/*.js",
+    "./node_modules/tw-elements/dist/js/**/*.js",
     "./**/*.{html,js}",
   ],
   theme: {
@@ -17,7 +18,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require("tw-elements/dist/plugin.cjs")
   ],
+  darkMode: "class"
 }
 
