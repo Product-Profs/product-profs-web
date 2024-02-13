@@ -14,7 +14,14 @@
   gap: 2rem;
 }
 
-.section1,
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+}
 .section2 {
   display: flex;
   flex-direction: column;
@@ -46,8 +53,8 @@ h1.title > span {
 }
 
 .btn {
-  text-transform: capitalize;
-  border-radius: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 0.2rem;
   background: linear-gradient(
     122deg,
     #f9c8bf 3.72%,
@@ -55,13 +62,12 @@ h1.title > span {
     #ab26f8 84.21%,
     #d75efc 100.63%
   );
-  padding: 0.5rem 0.25rem;
+  padding: 0.25rem;
   color: #e5e7eb;
   text-align: justify;
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0 auto;
 }
 
 .addon {
