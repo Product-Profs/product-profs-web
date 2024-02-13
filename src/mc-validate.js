@@ -265,7 +265,7 @@
                 });
 
                 setTimeout(() => {
-                    window.location.replace = "/product-profs-web/masterclass.html";
+                    window.location.href = "/product-profs-web/masterclass.html";
                 }, 2000);
 
                 // If the form has errors, display them, inline if possible, or appended to #mce-error-response
