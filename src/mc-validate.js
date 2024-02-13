@@ -265,8 +265,8 @@
                 });
 
                 setTimeout(() => {
-                    window.location.replace = "/masterclass.html";
-                }, 5000);
+                    window.location.href = "/masterclass.html";
+                }, 2000);
 
                 // If the form has errors, display them, inline if possible, or appended to #mce-error-response
             } else {
